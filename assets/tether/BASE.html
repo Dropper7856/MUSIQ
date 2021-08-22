@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="script.js"></script>
+</head>
+<body onload="timeFunction()" class="noselect"> 
+<div id="background" class="background">
+      <div id="divpanel" class="loadedPanelShow">
+        <div class="container">
+            <div class="center">
+                <div class="loader">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div style="display: none;" id="FormDivId" class="FormDiv">
+	<div style="-webkit-app-region: drag;" class="form_drag"></div>
+	<div class="" style="position: absolute;right: 60px;top: 25px;z-index: 10">
+    	<a onclick="cefCustomObject.minimizeForm();" href="#close"><img src="https://raw.githubusercontent.com/Dropper7856/MUSIQ/main/remove.png" width="16" height="16"></a>
+    </div>
+	<div class="rotate-90-cw rotate-90-ccw" style="position: absolute;right: 20px;top: 20px;z-index: 10">
+    	<a onclick="cefCustomObject.closeForm();" href="#close"><img src="https://raw.githubusercontent.com/Dropper7856/MUSIQ/main/cancel_white.png" width="16" height="16"></a>
+    </div>
+    <div class="titleP">
+    	<img src="https://raw.githubusercontent.com/Dropper7856/MUSIQ/main/robot.png" width="50" height="50"><h1>Kelconke Gold</h1>
+    </div>
+    <div class="buttons">
+		<button id="btnstart" onclick="cefCustomObject.starttrade();" class="btn-hover startcolor">START</button>
+	</div>
+	<div class="settings">
+		<h2 id="settingstext"></h2>
+	</div>
+<div id="settingsMenu" class="outer-menu">
+  <input id="containerOUTER"  class="checkbox-toggle" type="checkbox" />
+  <div class="hamburger">
+    <div></div>
+  </div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li>
+          	<div class="container">
+				<div class="container__item">
+					<form class="form">
+						<input type="text" id="input_ordre" class="form__field" placeholder="Order value" />
+						<button onclick="cefCustomObject.ordrevalue(document.getElementById('input_ordre').value);" type="button" class="btn btn--primary btn--inside uppercase">Modify</button>
+					</form>
+				</div>
+			</li>
+          <li>
+          	<div class="container">
+				<div class="container__item">
+					<form class="form">
+						<input type="text" id="input_tp" class="form__field" style="width: 220px" placeholder="Take Profit" />
+						<button onclick="cefCustomObject.takeprofit(document.getElementById('input_tp').value);" type="button" class="btn btn--primary btn--inside uppercase">Modify</button>
+					</form>
+				</div>
+			</li>
+          <li>
+          	<div class="container">
+				<div class="container__item">
+					<form class="form">
+						<input type="text" id="input_sl" class="form__field" style="width: 220px" placeholder="Stop Loss" />
+						<button onclick="cefCustomObject.stoploss(document.getElementById('input_sl').value);" type="button" class="btn btn--primary btn--inside uppercase">Modify</button>
+					</form>
+				</div>
+			</li>
+			<li>
+          	<div class="container">
+				<div class="container__item">
+					<form class="form">
+						<input type="text" id="input_nb" class="form__field" style="width: 220px" placeholder="Number of orders" />
+						<button onclick="cefCustomObject.setnbordre(document.getElementById('input_nb').value);" type="button" class="btn btn--primary btn--inside uppercase">Modify</button>
+					</form>
+				</div>
+			</li>
+        </ul>
+      </div>
+      <div>
+      	<ul>
+          <li>
+			<div >
+      			<h2>Automatic order value: </h2>
+      				<div>
+      					<input id="toggle-on_AutoValueOrder" class="toggle toggle-left" name="toggle_AutoValueOrder" value="false" type="radio" checked>
+						<label onclick="cefCustomObject.autoordervalue('true');" for="toggle-on_AutoValueOrder" class="btn-toggle">Yes</label>
+						<input id="toggle-off_AutoValueOrder" class="toggle toggle-right" name="toggle_AutoValueOrder" value="true" type="radio">
+						<label onclick="cefCustomObject.autoordervalue('false');" for="toggle-off_AutoValueOrder" class="btn-toggle">No</label>
+      				</div>
+      			</div>
+		 	</li>
+          	<li>
+          		<div class="button-Hamburger">
+				<button class="btn-hover startcolor">Schedule</button>
+				</div>
+			</li>
+          	<li>
+			<div>
+      			<h2>Scalping mode: </h2>
+      				<div>
+      					<input id="toggle-on_Scalping" class="toggle toggle-left" name="toggle_scalping" type="radio">
+						<label onclick="cefCustomObject.setscalpingmode('true');" for="toggle-on_Scalping" class="btn-toggle">Yes</label>
+						<input id="toggle-off_Scalping" class="toggle toggle-right" name="toggle_scalping" type="radio">
+						<label onclick="cefCustomObject.setscalpingmode('false');" for="toggle-off_Scalping" class="btn-toggle">No</label>
+      				</div>
+      			</div>
+			</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Developed by Donovan.B</h3>
+  </div>
+</div>  <input id="containerOUTER"  class="checkbox-toggle" type="checkbox" />
+  <div class="hamburger">
+    <div></div>
+  </div>
+    <div class="menu">
+  </div>
+</div>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style type="text/css">
+        .container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .loadedPanelShow {
+            z-index: 99999;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .loader {
+            border: 4px solid #f3f3f31a;
+            border-top: 4px solid #E45A84; /* Blue */
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            animation: spin 0.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+    </style>
+</head>
+<body style="margin: 0;">
+<div class="background">
+    <div id="divpanel" class="loadedPanelShow">
+        <div class="container">
+            <div class="center">
+                <div class="loader">
+                </div>
+            </div>
+        </div>
+    </div>
+        <iframe src="BASE.html" onload="onMyFrameLoad(this)" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; border: none; margin: 0; z-index: 500;"></iframe>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</body>
+</html>
