@@ -79,8 +79,8 @@ function SetInputValue(id, value){
 	document.getElementById(id).value = value;
 }
 
-function SetChecksymbol(id, delay){
+function SetChecksymbol(id, delay, msg){
 	document.getElementById(id).textContent = "✓";
-	setTimeout(function(){ document.getElementById(id).textContent = "Edit"; }, delay);
+	setTimeout(function(){ document.getElementById(id).textContent = msg; }, delay);
 	
 }
