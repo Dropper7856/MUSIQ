@@ -1228,3 +1228,16 @@ input[type=radio].toggle:checked + label:after {
   }
 }
 
+.wrapper select {
+    position: absolute;
+    margin-left: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    background: #3f35446b;
+    color: white;
+}
+
+.wrapper option {
+	margin-bottom: 10px;
+}
