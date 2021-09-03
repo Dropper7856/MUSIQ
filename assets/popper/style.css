@@ -1238,6 +1238,10 @@ input[type=radio].toggle:checked + label:after {
     color: white;
 }
 
+.wrapper select:focus {
+  outline: none; 
+}
+
 .wrapper option {
 	margin-bottom: 10px;
 }
