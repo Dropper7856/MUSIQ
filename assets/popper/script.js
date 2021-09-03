@@ -84,3 +84,9 @@ function SetChecksymbol(id, delay, msg, symb){
 	setTimeout(function(){ document.getElementById(id).textContent = msg; }, delay);
 	
 }
+
+function SetSymbol(id){
+	var e = document.getElementById(id);
+	var strUser = e.value;
+	return strUser;
+}
