@@ -772,7 +772,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100%;
 }
 .outer-menu .menu > div > div > ul {
   list-style: none;
@@ -1243,6 +1243,7 @@ z-index: 10;
   font-size: 14px;
   line-height: 25px;
   font-family: "Roboto", Arial;
+  margin-left: 10px;
 }
 
 .select-menu select,
