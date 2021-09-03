@@ -926,7 +926,6 @@ input[type=radio].toggle:checked + label:after {
 }
 
 .button-Hamburger{
-z-index: 10;
     text-align: center;
     position: relative;
     left: 49%;
