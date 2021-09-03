@@ -1243,6 +1243,12 @@ input[type=radio].toggle:checked + label:after {
   outline: none; 
 }
 
+.wrapper select:active, select:hover {
+  outline-color: red
+}
+
+
 .wrapper option {
 	margin-bottom: 10px;
+	cursor: pointer;
 }
