@@ -1237,14 +1237,11 @@ input[type=radio].toggle:checked + label:after {
     background: #3f35446b;
     color: white;
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+    border: 0px;
 }
 
 .wrapper select:focus {
   outline: none; 
-}
-
-.wrapper select:active, select:hover {
-  outline-color: red
 }
 
 
