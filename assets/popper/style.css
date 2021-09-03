@@ -1236,6 +1236,7 @@ input[type=radio].toggle:checked + label:after {
     font-size: 20px;
     background: #3f35446b;
     color: white;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
 }
 
 .wrapper select:focus {
